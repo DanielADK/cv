@@ -117,7 +117,7 @@
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
-\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\smallskip}
 
 \newenvironment{fullwidth}{%
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
@@ -133,7 +133,7 @@
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
 
-\newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{\normalfont #1}\hspace{0.5em}#2\hspace{2em}}}
+\newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{\normalfont #1}\hspace{0.2em}#2\hspace{1em}}}
 
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
@@ -177,7 +177,7 @@
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
-  {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
+  {\color{heading}\rule{\linewidth}{2pt}\par}\smallskip
 }
 
 \newcommand{\cvsubsection}[1]{%
